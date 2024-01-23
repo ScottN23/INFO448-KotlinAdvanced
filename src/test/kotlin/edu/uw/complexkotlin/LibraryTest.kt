@@ -21,6 +21,28 @@ class LibraryTest {
     @Test fun fizzbuzzToFifteen() {
         assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZ", fizzbuzz(1..15))
     }
+    @Test fun fizzbuzzToFifty() {
+        assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZ", fizzbuzz(1..50))
+    }
+    @Test fun fizzbuzzToHundred() {
+        assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZ", fizzbuzz(1..100))
+    }
+
+    @Test fun fizzbuzzToTwoDOH() {
+        assertEquals("", fizzbuzzDOH(1..2))
+    }
+    @Test fun fizzbuzzToThreeDOH() {
+        assertEquals("FIZZ", fizzbuzzDOH(1..3))
+    }
+    @Test fun fizzbuzzToSixDOH() {
+        assertEquals("FIZZBUZZFIZZ", fizzbuzzDOH(1..6))
+    }
+    @Test fun fizzbuzzToTwelveDOH() {
+        assertEquals("FIZZBUZZFIZZDOH!FIZZBUZZFIZZ", fizzbuzzDOH(1..12))
+    }
+    @Test fun fizzbuzzToFifteenDOH() {
+        assertEquals("FIZZBUZZFIZZDOH!FIZZBUZZFIZZDOH!FIZZBUZZ", fizzbuzzDOH(1..15))
+    }
     // Fizzbuzz to 25 should equal "FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZ"
     // Fizzbuzz to 50 should equal "FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZ"
 
